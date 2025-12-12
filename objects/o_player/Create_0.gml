@@ -5,8 +5,8 @@ canAct = 1;
 turn_finished = 0;
 
 dir = -1;
-
+baseAccuracy = 0;
 obj = 0;
 
-weapon = noone;	//unarmed - sword - lance - bow
+weapon = WeaponBigSword()	//unarmed - sword - lance - bow
 

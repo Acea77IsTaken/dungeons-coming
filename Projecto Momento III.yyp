@@ -6,9 +6,12 @@
     {"id":{"name":"o_player","path":"objects/o_player/o_player.yy",},"order":0,},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},"order":2,},
     {"id":{"name":"PlayerAttack","path":"scripts/PlayerAttack/PlayerAttack.yy",},"order":7,},
+    {"id":{"name":"nose","path":"scripts/nose/nose.yy",},"order":8,},
     {"id":{"name":"s_solid","path":"sprites/s_solid/s_solid.yy",},"order":1,},
     {"id":{"name":"o_gameMaster","path":"objects/o_gameMaster/o_gameMaster.yy",},"order":6,},
+    {"id":{"name":"o_oldSword","path":"objects/o_oldSword/o_oldSword.yy",},"order":2,},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
+    {"id":{"name":"o_sword","path":"objects/o_sword/o_sword.yy",},"order":1,},
     {"id":{"name":"o_rat","path":"objects/o_rat/o_rat.yy",},"order":5,},
     {"id":{"name":"Movement","path":"scripts/Movement/Movement.yy",},"order":5,},
     {"id":{"name":"o_enemy_body","path":"objects/o_enemy_body/o_enemy_body.yy",},"order":7,},
@@ -16,6 +19,7 @@
     {"id":{"name":"BasicPathFind","path":"scripts/BasicPathFind/BasicPathFind.yy",},"order":4,},
     {"id":{"name":"o_wall","path":"objects/o_wall/o_wall.yy",},"order":3,},
     {"id":{"name":"EnemyMovement","path":"scripts/EnemyMovement/EnemyMovement.yy",},"order":6,},
+    {"id":{"name":"o_weapon","path":"objects/o_weapon/o_weapon.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -53,6 +57,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":8,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Weapons","folderPath":"folders/Objects/Weapons.yy","order":9,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

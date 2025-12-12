@@ -28,9 +28,5 @@ if(canAct)
 		dir = -1;
 	}
 	
-	//Atack
-	if(mouse_check_button(mb_left))
-	{
-		PlayerAttack(weapon);
-	}
+
 }

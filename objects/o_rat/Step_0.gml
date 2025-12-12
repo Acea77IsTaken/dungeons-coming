@@ -4,3 +4,8 @@ if(canAct)
 	Movement()
 	
 }
+
+if(hp <= 0)
+{
+	instance_destroy()
+}

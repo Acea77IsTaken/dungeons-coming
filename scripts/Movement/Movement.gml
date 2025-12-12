@@ -7,39 +7,24 @@ function Movement(){
 			if(instance_place(x+32,y,all) == noone)
 			{
 				x+=32
-
-			}
-			else {
-				
 			}
 		break;
 		case 90:
-			if(instance_place(x,y-32,o_actor) == noone)
+			if(instance_place(x,y-32,all) == noone)
 			{
 				y-=32
 			}
-			else {
-				
-			}
 		break;
 		case 180:
-			if(instance_place(x-32,y,o_actor) == noone)
+			if(instance_place(x-32,y,all) == noone)
 			{
 				x-=32
-				
-			}
-			else {
-			
 			}
 		break;
 		case 270:
-			if(instance_place(x,y+32,o_actor) == noone)
+			if(instance_place(x,y+32,all) == noone)
 			{
 				y+=32
-			
-			}
-			else {
-				
 			}
 		break;
 	}

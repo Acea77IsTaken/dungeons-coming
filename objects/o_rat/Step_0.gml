@@ -1,0 +1,6 @@
+if(canAct)
+{
+	BasicPathFind()
+	Movement()
+	
+}

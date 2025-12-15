@@ -13,3 +13,27 @@ return {
 		},
     };
 }
+
+function strenghtPotion()
+{
+return {
+	Id: 31,
+	name: "Strenght Potion",
+	description: "the yellow glint of this bottle fills you with... Dread"
+	effect: function(user){
+		user.str += 1;
+	},
+};
+}
+
+function strenghtPotion()
+{
+return {
+	Id: 32,
+	name: "Agility Potion",
+	description: "the liquid looks almost as if it were a gas"
+	effect: function(user){
+		user.str += 1;
+	},
+};
+}

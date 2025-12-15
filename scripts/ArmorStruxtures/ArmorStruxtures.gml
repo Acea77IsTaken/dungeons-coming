@@ -4,43 +4,54 @@ function NoArmor()
 {
 return {
 		Id: 20,
-        name: "no armor",
+        name: "tu ropa",
         defenseBonus: 0,
         DmgReduction: 0,
         strReq: 0,
-		description: "the clothes you came here with, they are old but comfortable",
+		description: "las ropas con las que bajaste, son comodas y ligeras",
     };
 }
 
 function OldLeatherArmor()
 {
 return {
-        name: "old leather armor",
+        name: "Armadura de cuero vieja",
         defenseBonus: 2,
         DmgReduction: 0,
         strReq: 1,
-		description: "the old leather is light, but offers no protection agains attacks",
+		description: "aunque el viejo cuero es ligero cualquier ataque lo atravesara facilmente",
     };
 }
 
 function ReinforcedLeatherArmor()
 {
 return {
-        name: "reinforced leather armor",
+        name: "Armadura ded cuero reforzado",
         defenseBonus: 2,
         DmgReduction: 2,
         strReq: 1,
-		description: "its light and offers good protection, but it will not stop death to come for you",
+		description: "Es ligera y ofrece buena proteccion, pero seguira sin defenderte de la muerte",
     };
 }
 
-function ()
+function Chainmail()
 {
 return {
-        name: "reinforced leather armor",
+        name: "Armadura de cota de mallas",
         defenseBonus: 2,
         DmgReduction: 2,
         strReq: 1,
-		description: "its light and offers good protection, but it will not stop death to come for you",
+		description: "Es ligera y ofrece buena proteccion, pero seguira sin defenderte de la muerte",
+    };
+}
+
+function GodsChoosenArmor()
+{
+return {
+        name: "Armadura del elegido de dios",
+        defenseBonus: 2,
+        DmgReduction: 2,
+        strReq: 1,
+		description: "de no ser por tu posicion de estatus y poder, la muerte seria segura",
     };
 }

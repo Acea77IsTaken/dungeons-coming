@@ -1,16 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_enemy_body",
-  "spriteId": null,
+  "name": "o_TheScribe",
+  "spriteId": {
+    "name": "s_theScribe",
+    "path": "sprites/s_theScribe/s_theScribe.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_actor",
-    "path": "objects/o_actor/o_actor.yy",
+    "name": "o_npc",
+    "path": "objects/o_npc/o_npc.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,11 +27,14 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":10,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Actors/Enemies.yy",
+    "name": "Npcs",
+    "path": "folders/Objects/Actors/Npcs.yy",
   },
 }

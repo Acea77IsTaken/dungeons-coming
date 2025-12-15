@@ -2,7 +2,6 @@ if(canAct){
 	var objective = instance_place(mouse_x,mouse_y,o_actor)
 	if(objective != noone)
 	{
-		show_debug_message("si hay objetivo")
 		if(object_is_ancestor(objective.object_index,o_enemy_body))
 		{
 			show_debug_message("si es hijo de enemy body")
@@ -29,6 +28,21 @@ if(canAct){
 			{
 				show_debug_message("El enemigo está fuera de rango. Distancia: " + string(distance) + ", Rango: " + string(weapon.range))
 			}
+		}
+		
+		if(object_is_ancestor(objective.object_index,o_npc))
+		{
+			show_debug_message("es un npc")
+			// Verificar que el enemigo esté en rango del arma
+			var distance = point_distance(x, y, objective.x, objective.y)
+			if(distance <= 32)
+			{
+				with(objective)
+				{
+					event_perform(ev_other,ev_user0)
+				}
+			}
+
 		}
 	}
 }

@@ -1,0 +1,6 @@
+game_end()
+
+image_index = 1;
+
+image_xscale = 1.2;
+image_yscale = 1.2;

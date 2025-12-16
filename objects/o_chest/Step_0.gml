@@ -18,17 +18,44 @@ if (awaitingChoice)
 				if (createdLoot.Id > 0 and createdLoot.Id < 21)
 				{
 					o_player.weapon = createdLoot;
-					show_message("Equipaste el arma: " + createdLoot.name);
+					var _d = (instance_exists(o_dialog)) ? instance_find(o_dialog, 0) : instance_create_layer(x, y, "GUI", o_dialog);
+					with (_d)
+					{
+						text = [];
+						page = 0;
+						page_number = 0;
+						textLength = [];
+						textbox_x_offset = [];
+						addText("Equipaste el arma: " + other.createdLoot.name);
+					}
 				}
 				else if (createdLoot.Id > 19 and createdLoot.Id < 30)
 				{
 					o_player.armor = createdLoot;
-					show_message("Equipaste la armadura: " + createdLoot.name);
+					var _d = (instance_exists(o_dialog)) ? instance_find(o_dialog, 0) : instance_create_layer(x, y, "GUI", o_dialog);
+					with (_d)
+					{
+						text = [];
+						page = 0;
+						page_number = 0;
+						textLength = [];
+						textbox_x_offset = [];
+						addText("Equipaste la armadura: " + other.createdLoot.name);
+					}
 				}
 				else if (createdLoot.Id > 29 and createdLoot.Id < 41)
 				{
 					o_player.potion = createdLoot;
-					show_message("Guardaste la poción: " + createdLoot.name);
+					var _d = (instance_exists(o_dialog)) ? instance_find(o_dialog, 0) : instance_create_layer(x, y, "GUI", o_dialog);
+					with (_d)
+					{
+						text = [];
+						page = 0;
+						page_number = 0;
+						textLength = [];
+						textbox_x_offset = [];
+						addText("Guardaste la poción: " + other.createdLoot.name);
+					}
 				}
 			
 			// Vaciar cofre al equipar/guardar

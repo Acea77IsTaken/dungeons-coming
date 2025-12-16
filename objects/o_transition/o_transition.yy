@@ -7,7 +7,7 @@
     "path": "sprites/s_transition/s_transition.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,

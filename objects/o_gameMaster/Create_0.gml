@@ -12,4 +12,4 @@ endgame = 0;
 
 randomize()
 
-
+global.previous_room = lobby

@@ -16,6 +16,7 @@
     {"id":{"name":"o_interactable","path":"objects/o_interactable/o_interactable.yy",},"order":0,},
     {"id":{"name":"weaponsStructures","path":"scripts/weaponsStructures/weaponsStructures.yy",},"order":0,},
     {"id":{"name":"floor1","path":"rooms/floor1/floor1.yy",},"order":3,},
+    {"id":{"name":"floor2","path":"rooms/floor2/floor2.yy",},"order":4,},
     {"id":{"name":"walls_floor","path":"sprites/walls_floor/walls_floor.yy",},"order":8,},
     {"id":{"name":"crackedfloor","path":"tilesets/crackedfloor/crackedfloor.yy",},"order":0,},
     {"id":{"name":"s_solid","path":"sprites/s_solid/s_solid.yy",},"order":1,},
@@ -88,10 +89,11 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"floor1","path":"rooms/floor1/floor1.yy",},},
+    {"roomId":{"name":"floor2","path":"rooms/floor2/floor2.yy",},},
     {"roomId":{"name":"lobby","path":"rooms/lobby/lobby.yy",},},
     {"roomId":{"name":"testing","path":"rooms/testing/testing.yy",},},
-    {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},

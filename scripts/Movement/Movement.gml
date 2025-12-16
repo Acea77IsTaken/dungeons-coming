@@ -24,14 +24,33 @@ function Movement(){
 		default:
 			return;
 	}
-	
-	// colisión básica
-	if (instance_place(nx, ny, all) == noone)
+
+	// --- Excepción de colisión: permitir pararse/entrar en o_transition ---
+	// Primero: si hay transición en la casilla destino, NO bloquea el movimiento.
+	var _tr = instance_place(nx, ny, o_transition);
+	if (_tr != noone)
 	{
+		// Si tu transición usa collision con o_player para cambiar de room,
+		// basta con movernos a la casilla y la colisión se encargará.
 		target_x = nx;
 		target_y = ny;
 		moving = true;
+		exit;
 	}
+
+	// Bloquear con sólidos/obstáculos (pero no con la transición)
+	// Nota: si tus paredes son o_wall, esto evita que te bloquee cualquier cosa "all".
+	if (place_meeting(nx, ny, o_wall))
+	{
+		return;
+	}
+
+	// Si tienes otros obstáculos además de o_wall, agrégalos aquí:
+	// if (place_meeting(nx, ny, o_enemy_body)) return;
+
+	target_x = nx;
+	target_y = ny;
+	moving = true;
 }
 
 // Devuelve true si el movimiento terminó en este frame (para evitar doble acción)

@@ -34,12 +34,14 @@ if(canAct and alive =1)
 	{
 		dir = 0;
 		Movement();
+		image_xscale = 1
 		dir = -1;
 	}
 	if(keyboard_check_released(ord("A")))
 	{
 		dir = 180;
 		Movement();
+		image_xscale = -1
 		dir = -1;
 	}
 	
@@ -57,12 +59,19 @@ if(canAct and alive =1)
 		var potionName = (potion != undefined) ? potion.name : "Ninguna";
 		var potionDesc = (potion != undefined && potion.description != undefined) ? potion.description : "";
 		
-		var msg = "Equipo actual:\n";
-		msg += "Arma: " + weaponName + "\n" + weaponDesc + "\n\n";
-		msg += "Armadura: " + armorName + "\n" + armorDesc + "\n\n";
-		msg += "Poción: " + potionName + "\n" + potionDesc;
+		var msg1 = "Equipo actual:\n";
+		msg1 += "Arma: " + weaponName + "\n" + weaponDesc;
+		var msg2 = "Armadura: " + armorName + "\n" + armorDesc + "\n\n";
+		var msg3 = "Pocion: " + potionName + "\n" + potionDesc;
 		
-		show_message(msg);
+		var inspect = instance_create_layer(x,y,"GUI",o_dialog)
+		with inspect
+		{
+			addText(msg1);
+			addText(msg2);
+			addText(msg3);
+			h = 100;
+		}
 	}
 }
 

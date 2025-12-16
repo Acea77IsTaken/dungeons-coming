@@ -53,7 +53,28 @@ if(chargingExplosion && canAct)
 	turnsLeft -= 1;	
 	if(turnsLeft <= 0)
 	{
-		Explode(self,attackRange,attackDmg)	
+
+		Explode(self,attackRange,attackDmg);
+		ex_fx = 1;
+		ex_t = 0;
+		canAct = 0;
+		chargingExplosion = 0;
 	}
 	turn_finished = 1;
+}
+
+
+if (ex_fx)
+{
+	ex_t += 1;
+	if (ex_t >= ex_dur) instance_destroy();
+}
+
+
+if (chargingExplosion)
+{
+	var _u = 1 - (turnsLeft / 3); // 0..1 aprox (3->0)
+	_u = clamp(_u, 0, 1);
+	var _rate = lerp(blink_rate_min, blink_rate_max, _u);
+	blink_t += _rate;
 }

@@ -10,4 +10,6 @@ projectileExists = false;
 
 endgame = 0;
 
+randomize()
+
 

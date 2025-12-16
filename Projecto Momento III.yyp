@@ -10,6 +10,8 @@
     {"id":{"name":"o_dialog","path":"objects/o_dialog/o_dialog.yy",},"order":0,},
     {"id":{"name":"o_btnStart","path":"objects/o_btnStart/o_btnStart.yy",},"order":0,},
     {"id":{"name":"trap_animation","path":"sprites/trap_animation/trap_animation.yy",},"order":7,},
+    {"id":{"name":"Explode","path":"scripts/Explode/Explode.yy",},"order":13,},
+    {"id":{"name":"o_BombSlime","path":"objects/o_BombSlime/o_BombSlime.yy",},"order":2,},
     {"id":{"name":"ChestFunctions","path":"scripts/ChestFunctions/ChestFunctions.yy",},"order":12,},
     {"id":{"name":"o_interactable","path":"objects/o_interactable/o_interactable.yy",},"order":0,},
     {"id":{"name":"weaponsStructures","path":"scripts/weaponsStructures/weaponsStructures.yy",},"order":0,},

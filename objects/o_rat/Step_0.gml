@@ -1,6 +1,6 @@
 // Actualizar movimiento suave; si acaba en este frame, no actuar de nuevo
 var moveEnded = MovementUpdate();
-
+var player = instance_nearest(x, y, o_player);
 // Despertar y entrar a iniciativa solo si está cerca del jugador
 if (!isAwake)
 {
@@ -31,9 +31,9 @@ if (moveEnded)
 if (isAwake && canAct && !moving)
 {
 	// Comprobar si el jugador está en rango de ataque
-	if (distance_to_object(o_player) <= attackRange)
+	if (point_distance(player.x,player.y,x,y) <= attackRange)
 	{
-		var player = instance_nearest(x, y, o_player);
+		
 		if (player != noone)
 		{
 			// Calcular defensa del jugador 
@@ -46,10 +46,10 @@ if (isAwake && canAct && !moving)
 			var ToHit = irandom_range(1, 20) + attackAccuracy;
 			if (ToHit >= playerDefense)
 			{
-				// Ataque exitoso
-				player.hp -= attackDmg;
+				var _dmg = attackDmg+irandom_range(-2,2);
+				player.hp -= _dmg;
 				var floatText = instance_create_layer(player.x,player.y,"GUI",o_floating_text)
-					floatText.value = string(attackDmg) + "!"
+					floatText.value = string(_dmg) + "!"
 					floatText.type = "dmg"
 			}
 			else
@@ -74,3 +74,4 @@ if(hp <= 0)
 {
 	instance_destroy()
 }
+

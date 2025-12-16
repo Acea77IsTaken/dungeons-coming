@@ -15,6 +15,7 @@ return {
 function OldLeatherArmor()
 {
 return {
+		Id: 21,
         name: "Armadura de cuero vieja",
         defenseBonus: 2,
         DmgReduction: 0,
@@ -26,6 +27,7 @@ return {
 function ReinforcedLeatherArmor()
 {
 return {
+	Id: 22,
         name: "Armadura ded cuero reforzado",
         defenseBonus: 2,
         DmgReduction: 2,
@@ -37,6 +39,7 @@ return {
 function Chainmail()
 {
 return {
+	Id: 23,
         name: "Armadura de cota de mallas",
         defenseBonus: 2,
         DmgReduction: 2,
@@ -48,6 +51,7 @@ return {
 function GodsChoosenArmor()
 {
 return {
+	Id: 24,
         name: "Armadura del elegido de dios",
         defenseBonus: 2,
         DmgReduction: 2,

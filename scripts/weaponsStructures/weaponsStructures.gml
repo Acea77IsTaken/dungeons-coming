@@ -9,6 +9,7 @@
         dmg: 5,
         range: 32,
 		description: "an old and rusty sword, barely more damaging than your fists",
+		strReq: 0,
     };
 	}
 	
@@ -20,6 +21,7 @@
         dmg: 15,
         range: 32,
 		description: "a very heavy sword, slow but sure to hurt if you where to be hit whit it",
+		strReq: 4,
     };
 	}
 	
@@ -31,16 +33,19 @@
         dmg: 2,
         range: 32,
 		description: "your own hands, you are no brawler, you are sure to die if you continue unarmed",
+		strReq: 0,
     };
 	}
 	
 	function Rapier() {
     return {
+		Id: 4,
         name: "Rapier",
         accuracy: 10,
         dmg: 7,
         range: 50,
 		description: "a swift and light weapon, but no edge in its blade, only good to poke holes",
+		strReq: 1,
     };
 	}
 	

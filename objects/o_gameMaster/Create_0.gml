@@ -8,6 +8,6 @@ global.GameMaster = id;
 
 projectileExists = false;
 
+endgame = 0;
 
-global.list_used = ds_list_create();
-global.list_chat = ds_queue_create();
+
